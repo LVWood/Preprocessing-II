@@ -1,1 +1,38 @@
 // Mixins in here
+
+.test() {
+    background-color: yellow;
+    border: 1px dashed red;
+}
+
+
+.custom-btn(@txtcolor: white, @bgcolor: @eastern-blue) {
+    display: block;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    color: @txtcolor;
+    background-color: @bgcolor;
+    width: 200px;
+    height: 45px;
+    padding-top: 15px;
+    &:hover {
+        background-color: @sandy-beach;
+        color: @eastern-blue;
+    }
+}
+
+.mobile-layout() {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 1em;
+    margin: 0;
+}
+
+.tablet-layout() {
+    margin: 0 2em;
+}
